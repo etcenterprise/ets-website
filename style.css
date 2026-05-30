@@ -1,1 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f7fa;
+    color: #333;
+}
 
+header {
+    background: #004aad;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.logo {
+    width: 180px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+}
+
+.hero h1 {
+    color: #004aad;
+}
+
+.services {
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: #004aad;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
