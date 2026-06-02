@@ -2,6 +2,7 @@ backend:
   name: github
   repo: etcenterprise/ets-website
   branch: main
+  base_url: https://ets-cms-auth.etcenterprise24.workers.dev
 
 local_backend: false
 
@@ -14,18 +15,36 @@ collections:
     label: "Projects"
     folder: "_projects"
     create: true
+    slug: "{{slug}}"
 
     fields:
-      - {label: "Project Title", name: "title", widget: "string"}
-      - {label: "Client", name: "client", widget: "string"}
-      - {label: "Location", name: "location", widget: "string"}
-      - {label: "Description", name: "body", widget: "markdown"}
+      - label: "Project Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Client"
+        name: "client"
+        widget: "string"
+
+      - label: "Location"
+        name: "location"
+        widget: "string"
+
+      - label: "Description"
+        name: "body"
+        widget: "markdown"
 
   - name: "services"
     label: "Services"
     folder: "_services"
     create: true
+    slug: "{{slug}}"
 
     fields:
-      - {label: "Service Name", name: "title", widget: "string"}
-      - {label: "Description", name: "body", widget: "markdown"}
+      - label: "Service Name"
+        name: "title"
+        widget: "string"
+
+      - label: "Description"
+        name: "body"
+        widget: "markdown"
