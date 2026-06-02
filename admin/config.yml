@@ -3,6 +3,8 @@ backend:
   repo: etcenterprise/ets-website
   branch: main
 
+local_backend: false
+
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
