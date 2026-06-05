@@ -1,0 +1,38 @@
+---
+layout: _includes/base.njk
+title: Services
+permalink: /services/index.html
+---
+
+<section class="about-preview">
+
+<h1>Our Services</h1>
+
+<p>
+Engineering, construction, renewable energy,
+water infrastructure and technical consultancy.
+</p>
+
+</section>
+
+<section class="services-section">
+
+<div class="cards">
+
+{% for service in collections.services %}
+
+<div class="card">
+
+<h3>{{ service.data.title }}</h3>
+
+<div>
+{{ service.content | safe }}
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</section>
