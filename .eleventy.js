@@ -1,10 +1,5 @@
 module.exports = function(eleventyConfig) {
 
-  eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addPassthroughCopy("logo.png");
-  eleventyConfig.addPassthroughCopy("style.css");
-
   eleventyConfig.addCollection("projects", function(collectionApi) {
     return collectionApi.getFilteredByGlob("_projects/*.md");
   });
@@ -15,8 +10,8 @@ module.exports = function(eleventyConfig) {
 
   return {
     dir: {
-      includes: "_includes",
-      output: "_site"
+      input: ".",
+      includes: "_includes"
     }
   };
 };
