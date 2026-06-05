@@ -1,0 +1,47 @@
+---
+layout: _includes/base.njk
+title: Projects
+permalink: /projects/index.html
+---
+
+<section class="about-preview">
+
+<h1>Our Projects</h1>
+
+<p>
+ETS has successfully delivered engineering,
+water infrastructure, renewable energy and
+construction projects across Somalia.
+</p>
+
+</section>
+
+<section class="services-section">
+
+<div class="cards">
+
+{% for project in collections.projects %}
+
+<div class="card">
+
+<h3>{{ project.data.title }}</h3>
+
+{% if project.data.client %}
+<p><strong>Client:</strong> {{ project.data.client }}</p>
+{% endif %}
+
+{% if project.data.location %}
+<p><strong>Location:</strong> {{ project.data.location }}</p>
+{% endif %}
+
+<div>
+{{ project.content | safe }}
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</section>
