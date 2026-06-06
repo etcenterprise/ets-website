@@ -1,5 +1,5 @@
 ---
-layout: _includes/base.njk
+layout: base.njk
 title: Projects
 permalink: /projects/index.html
 ---
@@ -23,15 +23,14 @@ construction projects across Somalia.
 {% for project in collections.projects %}
 
 <div class="card">
-
 <h3>{{ project.data.title }}</h3>
 
 {% if project.data.client %}
-<p><strong>Client:</strong> {{ project.data.client }}</p>
+<p>Client: {{ project.data.client }}</p>
 {% endif %}
 
 {% if project.data.location %}
-<p><strong>Location:</strong> {{ project.data.location }}</p>
+<p>Location: {{ project.data.location }}</p>
 {% endif %}
 
 <div>
