@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: etcenterprise/ets-website
-  branch: main
+  branch: eleventy
   base_url: https://ets-cms-auth.etcenterprise24.workers.dev
 
 local_backend: false
@@ -10,7 +10,6 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-
   - name: "projects"
     label: "Projects"
     folder: "_projects"
