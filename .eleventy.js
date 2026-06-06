@@ -1,10 +1,9 @@
 module.exports = function(eleventyConfig) {
 
-  // Copy static files
-  eleventyConfig.addPassthroughCopy("style.css");
+  eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("logo.png");
-  eleventyConfig.addPassthroughCopy("assets");
 
   eleventyConfig.addCollection("projects", function(collectionApi) {
     return collectionApi.getFilteredByGlob("_projects/*.md");
