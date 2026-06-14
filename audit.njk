@@ -1,0 +1,37 @@
+---
+layout: base.njk
+title: Audit & Financial Solutions
+---
+
+<section class="page-header">
+  <h1>Audit & Financial Solutions</h1>
+
+  <p>
+    ETS provides audit, financial management, compliance,
+    accounting and advisory services across Somalia.
+  </p>
+</section>
+
+<section class="audit-grid">
+
+{% for item in collections.audit %}
+
+<div class="card">
+
+  <h3>{{ item.data.title }}</h3>
+
+  {% if item.data.client %}
+  <p><strong>Client:</strong> {{ item.data.client }}</p>
+  {% endif %}
+
+  {% if item.data.location %}
+  <p><strong>Location:</strong> {{ item.data.location }}</p>
+  {% endif %}
+
+  {{ item.content | safe }}
+
+</div>
+
+{% endfor %}
+
+</section>
