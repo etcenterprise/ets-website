@@ -47,3 +47,25 @@ collections:
       - label: "Description"
         name: "body"
         widget: "markdown"
+  - name: "audit"
+    label: "Audit & Financial Solutions"
+    folder: "_audit"
+    create: true
+    slug: "{{slug}}"
+
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Client"
+        name: "client"
+        widget: "string"
+
+      - label: "Location"
+        name: "location"
+        widget: "string"
+
+      - label: "Description"
+        name: "body"
+        widget: "markdown"
