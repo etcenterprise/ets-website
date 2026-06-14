@@ -69,3 +69,59 @@ collections:
       - label: "Description"
         name: "body"
         widget: "markdown"
+  - name: "pages"
+    label: "Website Pages"
+
+    files:
+
+      - label: "Home Page"
+        name: "home"
+        file: "_content/home.md"
+
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Content"
+            name: "body"
+            widget: "markdown"
+
+      - label: "About Page"
+        name: "about"
+        file: "_content/about.md"
+
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Content"
+            name: "body"
+            widget: "markdown"
+
+      - label: "Contact Page"
+        name: "contact"
+        file: "_content/contact.md"
+
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Content"
+            name: "body"
+            widget: "markdown"
+
+      - label: "Gallery Page"
+        name: "gallery"
+        file: "_content/gallery.md"
+
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Content"
+            name: "body"
+            widget: "markdown"
