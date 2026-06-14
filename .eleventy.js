@@ -13,6 +13,10 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("_services/*.md");
   });
 
+  eleventyConfig.addCollection("audit", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("_audit/*.md");
+  });
+
   return {
     dir: {
       input: ".",
