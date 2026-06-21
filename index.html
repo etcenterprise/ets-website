@@ -1,41 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Engineering & Technical Solutions (ETS)</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<nav>
-    <img src="logo.png" class="nav-logo">
-
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/projects/">Projects</a></li>
-        <li><a href="/audit/">Audit & Financial Solutions</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+---
+layout: base.njk
+title: {{ home.title }}
+---
 
 <section class="hero">
     <div class="hero-content">
 
-        <h1>Engineering & Technical Solutions</h1>
+        <h1>{{ home.hero_title }}</h1>
 
         <p>
-            Delivering Engineering Excellence,
-            Water Infrastructure, Solar Energy,
-            Construction and Technical Consulting Across Somalia.
+            {{ home.hero_text }}
         </p>
 
-        <a href="/projects/" class="btn">
-            View Projects
+        <a href="{{ home.hero_button_link }}" class="btn">
+            {{ home.hero_button_text }}
         </a>
 
     </div>
@@ -43,68 +21,20 @@
 
 <section class="about-preview">
 
-    <h2>Who We Are</h2>
+    <h2>{{ home.about_title }}</h2>
 
     <p>
-        Engineering & Technical Solutions (ETS) is a registered engineering
-        and consultancy company operating in Puntland State of Somalia,
-        providing engineering design, industrial installation, solar energy,
-        construction and project management services.
+        {{ home.about_text }}
     </p>
-
-</section>
-
-<section class="services-section">
-
-    <h2>Our Services</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Civil Engineering</h3>
-            <p>Buildings, roads, drainage systems and infrastructure projects.</p>
-        </div>
-
-        <div class="card">
-            <h3>Solar Energy</h3>
-            <p>Solar PV systems and renewable energy solutions.</p>
-        </div>
-
-        <div class="card">
-            <h3>Water Infrastructure</h3>
-            <p>Boreholes, pipelines, tanks and water systems.</p>
-        </div>
-
-        <div class="card">
-            <h3>Construction Management</h3>
-            <p>Project planning, supervision and execution.</p>
-        </div>
-
-    </div>
 
 </section>
 
 <section class="cta">
 
-    <h2>Ready to Work With ETS?</h2>
+    <h2>{{ home.cta_title }}</h2>
 
-    <a href="contact.html" class="btn">
-        Contact Us
+    <a href="{{ home.cta_button_link }}" class="btn">
+        {{ home.cta_button_text }}
     </a>
 
 </section>
-
-<footer>
-
-    <h3>Engineering & Technical Solutions</h3>
-
-    <p>Garowe, Puntland, Somalia</p>
-
-    <p>etcenterprise24@gmail.com</p>
-
-    <p>+252 90 679 5582</p>
-
-</footer>
-
-</body>
-</html>
