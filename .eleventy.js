@@ -17,6 +17,31 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("_audit/*.md");
   });
 
+  eleventyConfig.addGlobalData(
+    "navigation",
+    require("./_content/navigation.yml")
+  );
+
+  eleventyConfig.addGlobalData(
+    "home",
+    require("./_content/home.md")
+  );
+
+  eleventyConfig.addGlobalData(
+    "about",
+    require("./_content/about.md")
+  );
+
+  eleventyConfig.addGlobalData(
+    "contact",
+    require("./_content/contact.md")
+  );
+
+  eleventyConfig.addGlobalData(
+    "gallery",
+    require("./_content/gallery.md")
+  );
+
   return {
     dir: {
       input: ".",
