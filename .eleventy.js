@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("logo.png");
+  eleventyConfig.addPassthroughCopy("_content");
 
   // Projects collection
   eleventyConfig.addCollection("projects", function(collectionApi) {
@@ -20,12 +21,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("audit", function(collectionApi) {
     return collectionApi.getFilteredByGlob("_audit/*.md");
   });
-
-  // Navigation data from CMS
-  eleventyConfig.addGlobalData(
-    "navigation",
-    require("./_content/navigation.yml")
-  );
 
   return {
     dir: {
