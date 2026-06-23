@@ -1,45 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>{{ title }}</title>
-
-<link rel="stylesheet" href="/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
 
 <nav>
+  <img src="/logo.png" class="nav-logo">
 
-<img src="/logo.png" class="nav-logo">
-
-<ul>
-{% for item in navigation.items %}
-<li>
-<a href="{{ item.url }}">
-{{ item.title }}
-</a>
-</li>
-{% endfor %}
-</ul>
-
+  <ul>
+    {% for item in navigation.items %}
+      <li>
+        <a href="{{ item.url }}">
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
 </nav>
 
-{{ content | safe }}
+<main>
+  {{ content | safe }}
+</main>
 
 <footer>
-
-<h3>Engineering & Technical Solutions</h3>
-
-<p>Garowe, Puntland, Somalia</p>
-
-<p>etcenterprise24@gmail.com</p>
-
-<p>+252 90 679 5582</p>
-
+  <h3>Engineering & Technical Solutions</h3>
+  <p>Garowe, Puntland, Somalia</p>
+  <p>etcenterprise24@gmail.com</p>
+  <p>+252 90 679 5582</p>
 </footer>
 
 </body>
