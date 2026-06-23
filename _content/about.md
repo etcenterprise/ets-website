@@ -1,6 +1,6 @@
 ---
-title: About Page
-page_title: About Us
+title: About Us
+subtitle: Engineering & Technical Solutions
 
 body: |
   Engineering & Technical Solutions (ETS) is a registered engineering and consultancy company operating in Puntland State of Somalia.
