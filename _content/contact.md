@@ -1,6 +1,8 @@
 ---
-title: Contact Page
-page_title: Contact Us
+title: Contact Us
+subtitle: Get In Touch
+
+body: Contact Engineering & Technical Solutions for engineering, water infrastructure, solar energy and consultancy services.
 
 address: Garowe, Puntland, Somalia
 email: etcenterprise24@gmail.com
