@@ -5,11 +5,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("logo.png");
 
-  eleventyConfig.addGlobalData("home", require("./_content/home.md"));
-  eleventyConfig.addGlobalData("about", require("./_content/about.md"));
-  eleventyConfig.addGlobalData("contact", require("./_content/contact.md"));
-  eleventyConfig.addGlobalData("gallery", require("./_content/gallery.md"));
-
   eleventyConfig.addCollection("projects", function(collectionApi) {
     return collectionApi.getFilteredByGlob("_projects/*.md");
   });
