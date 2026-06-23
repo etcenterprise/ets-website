@@ -210,3 +210,52 @@ footer h3 {
     font-size: 1rem;
   }
 }
+/* Force all text to be visible */
+
+nav a,
+.hero h1,
+.hero p,
+.about-preview h2,
+.about-preview p,
+.cta h2,
+footer,
+footer p,
+footer h3 {
+  color: white !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+.hero-content {
+  display: block !important;
+}
+
+.hero h1 {
+  font-size: 3rem !important;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem !important;
+  max-width: 700px;
+  margin: auto;
+}
+
+.about-preview {
+  background: white;
+  color: #333 !important;
+}
+
+.about-preview h2 {
+  color: #003f88 !important;
+}
+
+.about-preview p {
+  color: #333 !important;
+}
+
+.page-header,
+.page-content {
+  color: #222 !important;
+}
