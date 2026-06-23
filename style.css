@@ -137,3 +137,22 @@ padding:30px;
   padding: 40px 20px 80px;
   background: white;
 }
+nav a {
+  color: white !important;
+}
+
+.hero h1,
+.hero p,
+.about-preview,
+.about-preview h2,
+.about-preview p,
+.cta,
+.cta h2,
+footer {
+  color: white !important;
+}
+
+.page-header,
+.page-content {
+  color: black !important;
+}
