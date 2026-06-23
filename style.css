@@ -120,3 +120,20 @@ color:white;
 text-align:center;
 padding:30px;
 }
+.page-header {
+  background: white;
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.page-header h1 {
+  color: #003f88;
+  margin-bottom: 15px;
+}
+
+.page-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  background: white;
+}
