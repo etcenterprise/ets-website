@@ -1,8 +1,8 @@
 backend:
-name: github
-repo: etcenterprise/ets-website
-branch: eleventy
-base_url: https://ets-cms-auth.etcenterprise24.workers.dev
+  name: github
+  repo: etcenterprise/ets-website
+  branch: eleventy
+  base_url: https://ets-cms-auth.etcenterprise24.workers.dev
 
 local_backend: false
 
@@ -10,195 +10,189 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-
-* name: "projects"
-  label: "Projects"
-  folder: "_projects"
-  create: true
-  slug: "{{slug}}"
-
-  fields:
-
-  * label: "Project Title"
-    name: "title"
-    widget: "string"
-
-  * label: "Client"
-    name: "client"
-    widget: "string"
-
-  * label: "Location"
-    name: "location"
-    widget: "string"
-
-  * label: "Description"
-    name: "body"
-    widget: "markdown"
-
-* name: "services"
-  label: "Services"
-  folder: "_services"
-  create: true
-  slug: "{{slug}}"
-
-  fields:
-
-  * label: "Service Name"
-    name: "title"
-    widget: "string"
-
-  * label: "Description"
-    name: "body"
-    widget: "markdown"
-
-* name: "audit"
-  label: "Audit & Financial Solutions"
-  folder: "_audit"
-  create: true
-  slug: "{{slug}}"
-
-  fields:
-
-  * label: "Title"
-    name: "title"
-    widget: "string"
-
-  * label: "Client"
-    name: "client"
-    widget: "string"
-
-  * label: "Location"
-    name: "location"
-    widget: "string"
-
-  * label: "Description"
-    name: "body"
-    widget: "markdown"
-
-* name: "pages"
-  label: "Website Pages"
-  files:
-
-  * label: "Home Page"
-    name: "home"
-    file: "_content/home.md"
-    fields:
-
-    * label: "Hero Title"
-      name: "hero_title"
-      widget: "string"
-
-    * label: "Hero Text"
-      name: "hero_text"
-      widget: "text"
-
-    * label: "Hero Button Text"
-      name: "hero_button_text"
-      widget: "string"
-
-    * label: "Hero Button Link"
-      name: "hero_button_link"
-      widget: "string"
-
-    * label: "About Section Title"
-      name: "about_title"
-      widget: "string"
-
-    * label: "About Section Text"
-      name: "about_text"
-      widget: "text"
-
-    * label: "CTA Title"
-      name: "cta_title"
-      widget: "string"
-
-    * label: "CTA Button Text"
-      name: "cta_button_text"
-      widget: "string"
-
-    * label: "CTA Button Link"
-      name: "cta_button_link"
-      widget: "string"
-
-  * label: "About Page"
-    name: "about"
-    file: "_content/about.md"
-    fields:
-
-    * label: "Page Title"
-      name: "title"
-      widget: "string"
-
-    * label: "Subtitle"
-      name: "subtitle"
-      widget: "string"
-
-    * label: "Content"
-      name: "body"
-      widget: "markdown"
-
-  * label: "Contact Page"
-    name: "contact"
-    file: "_content/contact.md"
-    fields:
-
-    * label: "Page Title"
-      name: "title"
-      widget: "string"
-
-    * label: "Subtitle"
-      name: "subtitle"
-      widget: "string"
-
-    * label: "Email"
-      name: "email"
-      widget: "string"
-
-    * label: "Phone"
-      name: "phone"
-      widget: "string"
-
-    * label: "Address"
-      name: "address"
-      widget: "text"
-
-  * label: "Gallery Page"
-    name: "gallery"
-    file: "_content/gallery.md"
-    fields:
-
-    * label: "Page Title"
-      name: "title"
-      widget: "string"
-
-    * label: "Subtitle"
-      name: "subtitle"
-      widget: "string"
-
-    * label: "Content"
-      name: "body"
-      widget: "markdown"
-
-* name: "navigation"
-  label: "Navigation"
-  files:
-
-  * label: "Menu"
-    name: "menu"
-    file: "_content/navigation.yml"
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    create: true
+    slug: "{{slug}}"
 
     fields:
-
-    * label: "Menu Items"
-      name: "items"
-      widget: "list"
-
-      fields:
-
-      * label: "Title"
+      - label: "Project Title"
         name: "title"
         widget: "string"
 
-      * label: "URL"
-        name: "url"
+      - label: "Client"
+        name: "client"
         widget: "string"
+
+      - label: "Location"
+        name: "location"
+        widget: "string"
+
+      - label: "Description"
+        name: "body"
+        widget: "markdown"
+
+  - name: "services"
+    label: "Services"
+    folder: "_services"
+    create: true
+    slug: "{{slug}}"
+
+    fields:
+      - label: "Service Name"
+        name: "title"
+        widget: "string"
+
+      - label: "Description"
+        name: "body"
+        widget: "markdown"
+
+  - name: "audit"
+    label: "Audit & Financial Solutions"
+    folder: "_audit"
+    create: true
+    slug: "{{slug}}"
+
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Client"
+        name: "client"
+        widget: "string"
+
+      - label: "Location"
+        name: "location"
+        widget: "string"
+
+      - label: "Description"
+        name: "body"
+        widget: "markdown"
+
+  - name: "pages"
+    label: "Website Pages"
+
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "_content/home.md"
+
+        fields:
+          - label: "Hero Title"
+            name: "hero_title"
+            widget: "string"
+
+          - label: "Hero Text"
+            name: "hero_text"
+            widget: "text"
+
+          - label: "Hero Button Text"
+            name: "hero_button_text"
+            widget: "string"
+
+          - label: "Hero Button Link"
+            name: "hero_button_link"
+            widget: "string"
+
+          - label: "About Section Title"
+            name: "about_title"
+            widget: "string"
+
+          - label: "About Section Text"
+            name: "about_text"
+            widget: "text"
+
+          - label: "CTA Title"
+            name: "cta_title"
+            widget: "string"
+
+          - label: "CTA Button Text"
+            name: "cta_button_text"
+            widget: "string"
+
+          - label: "CTA Button Link"
+            name: "cta_button_link"
+            widget: "string"
+
+      - label: "About Page"
+        name: "about"
+        file: "_content/about.md"
+
+        fields:
+          - label: "Page Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Subtitle"
+            name: "subtitle"
+            widget: "string"
+
+          - label: "Content"
+            name: "body"
+            widget: "markdown"
+
+      - label: "Contact Page"
+        name: "contact"
+        file: "_content/contact.md"
+
+        fields:
+          - label: "Page Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Subtitle"
+            name: "subtitle"
+            widget: "string"
+
+          - label: "Email"
+            name: "email"
+            widget: "string"
+
+          - label: "Phone"
+            name: "phone"
+            widget: "string"
+
+          - label: "Address"
+            name: "address"
+            widget: "text"
+
+      - label: "Gallery Page"
+        name: "gallery"
+        file: "_content/gallery.md"
+
+        fields:
+          - label: "Page Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Subtitle"
+            name: "subtitle"
+            widget: "string"
+
+          - label: "Content"
+            name: "body"
+            widget: "markdown"
+
+  - name: "navigation"
+    label: "Navigation"
+
+    files:
+      - label: "Menu"
+        name: "menu"
+        file: "_content/navigation.yml"
+
+        fields:
+          - label: "Menu Items"
+            name: "items"
+            widget: "list"
+
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+
+              - label: "URL"
+                name: "url"
+                widget: "string"
