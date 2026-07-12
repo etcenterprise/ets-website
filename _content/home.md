@@ -12,3 +12,25 @@ cta_title: Ready to Work With ETS?
 cta_button_text: Contact Us
 cta_button_link: /contact.html
 ---
+why_title: Why Choose ETS?
+
+why_text: >
+  ETS delivers reliable engineering, construction,
+  water infrastructure, solar energy and technical
+  consultancy services throughout Somalia.
+
+projects_completed: "120+"
+clients_served: "60+"
+years_experience: "10+"
+engineers: "25+"
+
+quote_title: Request a Free Quotation
+
+quote_text: >
+  Tell us about your project and our engineering team
+  will contact you with a professional quotation.
+
+whatsapp: "+252907416345"
+
+whatsapp_message: >
+  Hello ETS, I would like to request a quotation.
