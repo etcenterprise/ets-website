@@ -235,7 +235,7 @@ collections:
                 name: "url"
                 widget: "string"
                 
-- name: "company"
+-  name: "company"
   label: "Company Settings"
 
   files:
