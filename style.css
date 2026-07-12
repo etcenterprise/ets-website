@@ -212,3 +212,171 @@ section p{
     margin:auto;
 
 }
+/* ==========================================
+   STATISTICS
+========================================== */
+
+.statistics{
+    background:#003f88;
+    color:#fff;
+}
+
+.statistics h2{
+    color:#fff;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.stat-box{
+    background:#fff;
+    color:#003f88;
+    border-radius:10px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.stat-box h2{
+    color:#003f88;
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    font-weight:bold;
+}
+
+/* ==========================================
+   SERVICES
+========================================== */
+
+.services-preview{
+    background:#fff;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.service-card{
+    background:#f7f7f7;
+    border-radius:10px;
+    padding:30px;
+    transition:.3s;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-card h3{
+    color:#003f88;
+    margin-bottom:15px;
+}
+
+/* ==========================================
+   PROJECTS
+========================================== */
+
+.projects-preview{
+    background:#eef4fb;
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.project-card{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.project-card h3{
+    color:#003f88;
+}
+
+/* ==========================================
+   QUOTE
+========================================== */
+
+.quote-section{
+    background:#003f88;
+    text-align:center;
+    color:#fff;
+}
+
+.quote-section h2{
+    color:#fff;
+}
+
+.quote-section p{
+    max-width:700px;
+    margin:20px auto 40px;
+}
+
+/* ==========================================
+   WHATSAPP
+========================================== */
+
+.whatsapp-float{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:34px;
+    box-shadow:0 8px 18px rgba(0,0,0,.3);
+    z-index:9999;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.08);
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.stats-grid,
+.services-grid,
+.projects-grid{
+    grid-template-columns:1fr;
+}
+
+}
