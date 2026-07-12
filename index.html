@@ -19,28 +19,23 @@ title: Home
 <!-- ABOUT -->
 <section class="about-preview">
   <div class="container">
-
     <h2>{{ home.about_title }}</h2>
 
     <p>{{ home.about_text }}</p>
-
   </div>
 </section>
 
 <!-- WHY CHOOSE ETS -->
 <section class="why-us">
   <div class="container">
-
     <h2>{{ home.why_title }}</h2>
 
     <p>{{ home.why_text }}</p>
-
   </div>
 </section>
 
-<!-- COMPANY STATISTICS -->
+<!-- STATISTICS -->
 <section class="statistics">
-
   <div class="container stats-grid">
 
     <div class="stat-box">
@@ -64,12 +59,10 @@ title: Home
     </div>
 
   </div>
-
 </section>
 
-<!-- SERVICES PREVIEW -->
+<!-- SERVICES -->
 <section class="services-preview">
-
   <div class="container">
 
     <h2>Our Services</h2>
@@ -82,8 +75,6 @@ title: Home
 
         <h3>{{ service.data.title }}</h3>
 
-        <p>{{ service.templateContent | truncate(150) }}</p>
-
       </div>
 
       {% endfor %}
@@ -95,19 +86,17 @@ title: Home
     </a>
 
   </div>
-
 </section>
 
-<!-- FEATURED PROJECTS -->
+<!-- PROJECTS -->
 <section class="projects-preview">
-
   <div class="container">
 
     <h2>Featured Projects</h2>
 
     <div class="projects-grid">
 
-      {% for project in collections.projects | reverse %}
+      {% for project in collections.projects %}
 
       <div class="project-card">
 
@@ -126,12 +115,10 @@ title: Home
     </a>
 
   </div>
-
 </section>
 
 <!-- QUOTE -->
 <section class="quote-section">
-
   <div class="container">
 
     <h2>{{ home.quote_title }}</h2>
@@ -143,12 +130,10 @@ title: Home
     </a>
 
   </div>
-
 </section>
 
-<!-- CALL TO ACTION -->
+<!-- CTA -->
 <section class="cta">
-
   <div class="container">
 
     <h2>{{ home.cta_title }}</h2>
@@ -158,16 +143,13 @@ title: Home
     </a>
 
   </div>
-
 </section>
 
-<!-- FLOATING WHATSAPP -->
-
+<!-- WHATSAPP -->
 <a
 class="whatsapp-float"
-href="https://wa.me/{{ home.whatsapp | replace('+','') }}?text={{ home.whatsapp_message | urlencode }}"
-target="_blank"
-title="Chat with ETS on WhatsApp">
+href="https://wa.me/{{ home.whatsapp }}"
+target="_blank">
 
 💬
 
