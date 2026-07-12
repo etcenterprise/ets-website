@@ -5,24 +5,32 @@ title: Home
 
 <section class="hero">
   <div class="hero-content">
-    <h1>{{ hero_title }}</h1>
-    <p>{{ hero_text }}</p>
 
-    <a href="{{ hero_button_link }}" class="btn">
-      {{ hero_button_text }}
+    <h1>{{ home.hero_title }}</h1>
+
+    <p>{{ home.hero_text }}</p>
+
+    <a href="{{ home.hero_button_link }}" class="btn">
+      {{ home.hero_button_text }}
     </a>
+
   </div>
 </section>
 
 <section class="about-preview">
-  <h2>{{ about_title }}</h2>
-  <p>{{ about_text }}</p>
+
+  <h2>{{ home.about_title }}</h2>
+
+  <p>{{ home.about_text }}</p>
+
 </section>
 
 <section class="cta">
-  <h2>{{ cta_title }}</h2>
 
-  <a href="{{ cta_button_link }}" class="btn">
-    {{ cta_button_text }}
+  <h2>{{ home.cta_title }}</h2>
+
+  <a href="{{ home.cta_button_link }}" class="btn">
+    {{ home.ctta_button_text }}
   </a>
+
 </section>
