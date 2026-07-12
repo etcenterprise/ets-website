@@ -234,6 +234,7 @@ collections:
               - label: "URL"
                 name: "url"
                 widget: "string"
+                
 - name: "company"
   label: "Company Settings"
 
