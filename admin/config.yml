@@ -115,7 +115,45 @@ collections:
           - label: "CTA Button Link"
             name: "cta_button_link"
             widget: "string"
+          - label: "Why Choose Us Title"
+            name: "why_title"
+            widget: "string"
 
+          - label: "Why Choose Us Text"
+            name: "why_text"
+            widget: "text"
+
+          - label: "Statistics - Projects Completed"
+            name: "projects_completed"
+            widget: "string"
+
+          - label: "Statistics - Clients Served"
+            name: "clients_served"
+            widget: "string"
+
+          - label: "Statistics - Years Experience"
+            name: "years_experience"
+            widget: "string"
+
+          - label: "Statistics - Engineers"
+            name: "engineers"
+            widget: "string"
+
+          - label: "Quote Section Title"
+            name: "quote_title"
+            widget: "string"
+
+          - label: "Quote Section Text"
+            name: "quote_text"
+            widget: "text"
+
+          - label: "WhatsApp Number"
+            name: "whatsapp"
+            widget: "string"
+
+          - label: "WhatsApp Default Message"
+            name: "whatsapp_message"
+            widget: "text"
       - label: "About Page"
         name: "about"
         file: "_content/about.md"
