@@ -3,47 +3,57 @@ layout: base.njk
 title: Audit & Financial Solutions
 ---
 
-<!-- PAGE HEADER -->
+<!-- HERO -->
 
 <section class="page-header">
 
-  <h1>Audit & Financial Solutions</h1>
+  <div class="container">
 
-  <p>
-    ETS provides audit, financial management, compliance,
-    accounting and advisory services across Somalia.
-  </p>
+    <h1>Audit & Financial Solutions</h1>
+
+    <p>
+      ETS provides professional auditing, accounting,
+      taxation, financial management, compliance,
+      internal audit and business advisory services
+      across Somalia.
+    </p>
+
+  </div>
 
 </section>
 
 
-<!-- AUDIT SERVICES / PROJECTS -->
+<!-- AUDIT SERVICES -->
 
-<section class="audit-grid">
+<section class="services-section">
 
-  <h2>Our Audit Services</h2>
+  <div class="container">
 
-  <div class="cards">
+    <h2>Our Audit Services</h2>
 
-  {% for item in collections.audit %}
+    <div class="cards">
 
-    <div class="card">
+      {% for item in collections.audit %}
 
-      <h3>{{ item.data.title }}</h3>
+      <div class="card">
 
-      {% if item.data.client %}
-      <p><strong>Client:</strong> {{ item.data.client }}</p>
-      {% endif %}
+        <h3>{{ item.data.title }}</h3>
 
-      {% if item.data.location %}
-      <p><strong>Location:</strong> {{ item.data.location }}</p>
-      {% endif %}
+        {% if item.data.client %}
+        <p><strong>Client:</strong> {{ item.data.client }}</p>
+        {% endif %}
 
-      {{ item.content | safe }}
+        {% if item.data.location %}
+        <p><strong>Location:</strong> {{ item.data.location }}</p>
+        {% endif %}
+
+        {{ item.content | safe }}
+
+      </div>
+
+      {% endfor %}
 
     </div>
-
-  {% endfor %}
 
   </div>
 
@@ -52,43 +62,91 @@ title: Audit & Financial Solutions
 
 <!-- AUDIT TEAM -->
 
-<section class="audit-team">
+<section class="team-section">
 
-  <h2>Meet Our Audit Team</h2>
+  <div class="container">
 
-  <div class="team-grid">
+    <h2>Meet Our Audit Team</h2>
 
-  {% for member in audit_team %}
+    <div class="team-grid">
 
-    <div class="team-card">
+      {% for member in audit_team %}
 
-      {% if member.photo %}
-      <img src="{{ member.photo }}" alt="{{ member.name }}">
-      {% endif %}
+      <div class="team-card">
 
-      <h3>{{ member.name }}</h3>
+        {% if member.photo %}
+        <img
+          src="{{ member.photo }}"
+          alt="{{ member.title }}"
+          class="team-photo">
+        {% endif %}
 
-      <h4>{{ member.position }}</h4>
+        <h3>{{ member.title }}</h3>
 
-      {% if member.email %}
-      <p><strong>Email:</strong> {{ member.email }}</p>
-      {% endif %}
+        <h4>{{ member.position }}</h4>
 
-      {% if member.phone %}
-      <p><strong>Phone:</strong> {{ member.phone }}</p>
-      {% endif %}
+        {% if member.experience %}
+        <p><strong>Experience:</strong> {{ member.experience }}</p>
+        {% endif %}
 
-      {% if member.experience %}
-      <p><strong>Experience:</strong> {{ member.experience }}</p>
-      {% endif %}
+        {% if member.education %}
+        <p><strong>Education:</strong> {{ member.education }}</p>
+        {% endif %}
 
-      {% if member.bio %}
-      <p>{{ member.bio }}</p>
-      {% endif %}
+        {% if member.email %}
+        <p><strong>Email:</strong> {{ member.email }}</p>
+        {% endif %}
+
+        {% if member.phone %}
+        <p><strong>Phone:</strong> {{ member.phone }}</p>
+        {% endif %}
+
+        {% if member.specializations %}
+
+        <h4>Specializations</h4>
+
+        <ul>
+
+          {% for skill in member.specializations %}
+          <li>{{ skill }}</li>
+          {% endfor %}
+
+        </ul>
+
+        {% endif %}
+
+        {% if member.body %}
+        <p>{{ member.body }}</p>
+        {% endif %}
+
+      </div>
+
+      {% endfor %}
 
     </div>
 
-  {% endfor %}
+  </div>
+
+</section>
+
+
+<!-- CONTACT CTA -->
+
+<section class="cta">
+
+  <div class="container">
+
+    <h2>Need Professional Audit Services?</h2>
+
+    <p>
+      Contact our Audit & Financial Solutions team today
+      for professional financial advice, audit services,
+      compliance reviews and business consultancy.
+    </p>
+
+    <a href="/contact.html" class="btn">
+      Contact Our Audit Team
+    </a>
 
   </div>
 
