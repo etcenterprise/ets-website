@@ -25,7 +25,7 @@ quote_text: >
   Tell us about your project and our engineering team
   will contact you with a professional quotation.
 
-whatsapp: "252907416345"
+whatsapp: "252906795582"
 
 whatsapp_message: "Hello ETS, I would like to request a quotation."
 
