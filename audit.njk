@@ -3,35 +3,93 @@ layout: base.njk
 title: Audit & Financial Solutions
 ---
 
+<!-- PAGE HEADER -->
+
 <section class="page-header">
+
   <h1>Audit & Financial Solutions</h1>
 
   <p>
     ETS provides audit, financial management, compliance,
     accounting and advisory services across Somalia.
   </p>
+
 </section>
+
+
+<!-- AUDIT SERVICES / PROJECTS -->
 
 <section class="audit-grid">
 
-{% for item in collections.audit %}
+  <h2>Our Audit Services</h2>
 
-<div class="card">
+  <div class="cards">
 
-  <h3>{{ item.data.title }}</h3>
+  {% for item in collections.audit %}
 
-  {% if item.data.client %}
-  <p><strong>Client:</strong> {{ item.data.client }}</p>
-  {% endif %}
+    <div class="card">
 
-  {% if item.data.location %}
-  <p><strong>Location:</strong> {{ item.data.location }}</p>
-  {% endif %}
+      <h3>{{ item.data.title }}</h3>
 
-  {{ item.content | safe }}
+      {% if item.data.client %}
+      <p><strong>Client:</strong> {{ item.data.client }}</p>
+      {% endif %}
 
-</div>
+      {% if item.data.location %}
+      <p><strong>Location:</strong> {{ item.data.location }}</p>
+      {% endif %}
 
-{% endfor %}
+      {{ item.content | safe }}
+
+    </div>
+
+  {% endfor %}
+
+  </div>
+
+</section>
+
+
+<!-- AUDIT TEAM -->
+
+<section class="audit-team">
+
+  <h2>Meet Our Audit Team</h2>
+
+  <div class="team-grid">
+
+  {% for member in audit_team %}
+
+    <div class="team-card">
+
+      {% if member.photo %}
+      <img src="{{ member.photo }}" alt="{{ member.name }}">
+      {% endif %}
+
+      <h3>{{ member.name }}</h3>
+
+      <h4>{{ member.position }}</h4>
+
+      {% if member.email %}
+      <p><strong>Email:</strong> {{ member.email }}</p>
+      {% endif %}
+
+      {% if member.phone %}
+      <p><strong>Phone:</strong> {{ member.phone }}</p>
+      {% endif %}
+
+      {% if member.experience %}
+      <p><strong>Experience:</strong> {{ member.experience }}</p>
+      {% endif %}
+
+      {% if member.bio %}
+      <p>{{ member.bio }}</p>
+      {% endif %}
+
+    </div>
+
+  {% endfor %}
+
+  </div>
 
 </section>
