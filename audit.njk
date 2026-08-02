@@ -3,7 +3,9 @@ layout: base.njk
 title: Audit & Financial Solutions
 ---
 
-<!-- HERO -->
+<!-- ===========================
+PAGE HEADER
+=========================== -->
 
 <section class="page-header">
 
@@ -13,9 +15,9 @@ title: Audit & Financial Solutions
 
     <p>
       ETS provides professional auditing, accounting,
-      taxation, financial management, compliance,
-      internal audit and business advisory services
-      across Somalia.
+      financial management, taxation, compliance,
+      risk management and business advisory services
+      throughout Somalia.
     </p>
 
   </div>
@@ -23,7 +25,9 @@ title: Audit & Financial Solutions
 </section>
 
 
-<!-- AUDIT SERVICES -->
+<!-- ===========================
+AUDIT SERVICES
+=========================== -->
 
 <section class="services-section">
 
@@ -47,7 +51,7 @@ title: Audit & Financial Solutions
         <p><strong>Location:</strong> {{ item.data.location }}</p>
         {% endif %}
 
-        {{ item.content | safe }}
+        {{ item.templateContent | safe }}
 
       </div>
 
@@ -60,7 +64,9 @@ title: Audit & Financial Solutions
 </section>
 
 
-<!-- AUDIT TEAM -->
+<!-- ===========================
+AUDIT TEAM
+=========================== -->
 
 <section class="team-section">
 
@@ -70,54 +76,54 @@ title: Audit & Financial Solutions
 
     <div class="team-grid">
 
-      {% for member in audit_team %}
+      {% for member in collections.audit_team %}
 
       <div class="team-card">
 
-        {% if member.photo %}
+        {% if member.data.photo %}
         <img
-          src="{{ member.photo }}"
-          alt="{{ member.title }}"
+          src="{{ member.data.photo }}"
+          alt="{{ member.data.title }}"
           class="team-photo">
         {% endif %}
 
-        <h3>{{ member.title }}</h3>
+        <h3>{{ member.data.title }}</h3>
 
-        <h4>{{ member.position }}</h4>
+        <h4>{{ member.data.position }}</h4>
 
-        {% if member.experience %}
-        <p><strong>Experience:</strong> {{ member.experience }}</p>
+        {% if member.data.experience %}
+        <p><strong>Experience:</strong> {{ member.data.experience }}</p>
         {% endif %}
 
-        {% if member.education %}
-        <p><strong>Education:</strong> {{ member.education }}</p>
+        {% if member.data.education %}
+        <p><strong>Education:</strong> {{ member.data.education }}</p>
         {% endif %}
 
-        {% if member.email %}
-        <p><strong>Email:</strong> {{ member.email }}</p>
+        {% if member.data.email %}
+        <p><strong>Email:</strong> {{ member.data.email }}</p>
         {% endif %}
 
-        {% if member.phone %}
-        <p><strong>Phone:</strong> {{ member.phone }}</p>
+        {% if member.data.phone %}
+        <p><strong>Phone:</strong> {{ member.data.phone }}</p>
         {% endif %}
 
-        {% if member.specializations %}
+        {% if member.data.specializations %}
 
         <h4>Specializations</h4>
 
         <ul>
 
-          {% for skill in member.specializations %}
+          {% for skill in member.data.specializations %}
+
           <li>{{ skill }}</li>
+
           {% endfor %}
 
         </ul>
 
         {% endif %}
 
-        {% if member.body %}
-        <p>{{ member.body }}</p>
-        {% endif %}
+        {{ member.templateContent | safe }}
 
       </div>
 
@@ -130,7 +136,9 @@ title: Audit & Financial Solutions
 </section>
 
 
-<!-- CONTACT CTA -->
+<!-- ===========================
+CALL TO ACTION
+=========================== -->
 
 <section class="cta">
 
@@ -139,9 +147,10 @@ title: Audit & Financial Solutions
     <h2>Need Professional Audit Services?</h2>
 
     <p>
-      Contact our Audit & Financial Solutions team today
-      for professional financial advice, audit services,
-      compliance reviews and business consultancy.
+      Our audit professionals are ready to assist your
+      organization with auditing, accounting, taxation,
+      compliance, internal controls and financial advisory
+      services.
     </p>
 
     <a href="/contact.html" class="btn">
